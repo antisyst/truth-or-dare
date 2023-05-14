@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chakra+Petch:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&family=Gemunu+Libre&family=Josefin+Sans&family=Jost:wght@500&family=Lexend:wght@400;500;800&family=Libre+Baskerville:wght@700&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+KR&family=Open+Sans:wght@400;500;600&family=Oxygen&family=Pacifico&family=Plus+Jakarta+Sans:wght@800&family=Poppins:ital,wght@0,400;0,500;0,600;1,400&family=Prompt&family=Questrial&family=Quicksand:wght@600&family=Roboto+Mono:wght@400;500;700&family=Roboto+Slab:wght@400;500&family=Tilt+Warp&family=Titillium+Web&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  overflow: hidden;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-height: 100vh;
+  width: 100%;
+  background: #ffff;
+  overflow: hidden;
+  overflow-x: hidden;
+
+   h1 {
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+    user-select: none;
+    font-size: calc(10px + 6vmin);
+   }
+}
+
+header { 
+  text-align: center;
+}
+.question-action {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  padding: 2.3em 25px;
+  border-radius: 15px;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 140px;
+
+  @media only screen and (max-width: 768px) {
+    width: 95%;
+    margin: 0 8px;
+    height: 190px;
+    max-height: max-content;
+  }
+
+
+p {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  height: 8vh;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 23px;
+     height: fit-content;
+  }
+}
+}
+.Question-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
+}
+.truth-action {
+  width: 130px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  height: 50px;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin: 16px 6px;
+  background-color: #171717;
+  user-select: none;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: all .4s;
+  @media only screen and (max-width: 700px)  {
+    cursor: none;
+  }
+
+  &:hover {
+    border-radius: 5px;
+ transform: translateY(-10px);
+ box-shadow: 0 7px 0 -2px #f85959,
+  0 15px 0 -4px #39a2db,
+  0 16px 10px -3px #39a2db;
+  }
+  &:active {
+    transition: all 0.2s;
+    transform: translateY(-5px);
+    box-shadow: 0 2px 0 -2px #f85959,
+     0 8px 0 -4px #39a2db,
+     0 12px 10px -3px #39a2db;
+  }
+}
+.creator-content {
+  text-align: center;
+  font-family: 'Chakra Petch', sans-serif;
+
+  a {
+    color: #000;
+  }
+}
